@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+<style>
+	#
+</style>
+<script language="javaScript">
+function toAlert()
+{
+   alert("hello continue...");
+}
+
+</script>
+</head>
+<body>
+<div id="firstdiv">
+<form>
+<div>第一个div</div>
+<div>第二个div</div>
+<div>第三个div</div>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<div class="dropdown">
+  <input type="button" value="下拉菜单">
+  <div class="dropdown-content">
+		<a href="http://www.baidu.com" style="text-decoration: none">baidu</a>
+	  	<hr>
+		<a href="http://www.163.com" style="text-decoration: none">163</a>
+  </div>
+</div>
+
+<table >
+<tr>
+<td>
+username:
+<input name="account"  id="accountID" type="text"  value="" />
+</td>
+</tr>
+<tr>
+<td>
+password:
+<input name="password"  id="passwordID" type="password"  value="" />
+</td>
+</tr>
+<tr>
+<td>地区:
+     <select class="u17" id="areaID">
+	  <option  value="1">天津</option>
+	  <option  value="2">北京</option>
+	  <option  value="3">上海</option>
+	  <option  value="4">河北</option>
+     </select>
+</td>
+
+</tr>
+<tr>
+<td>
+性别:
+<input name="u2" id="sexID1"  type="radio" CHECKED="checked" />Boy
+<input name="u2" id="sexID2" type="radio" />Girl
+</td>
+</tr>
+<td>
+四季：
+<input id="u"  type="checkbox" value="spring"/>春
+<input id="u"  type="checkbox" value="summer"/>夏
+<input id="u"  type="checkbox" value="Auterm"/>秋
+<input id="u"  type="checkbox" value="winter"/>冬
+</td>
+<tr>
+
+</tr>
+<tr>
+	<td>
+		<input class="u16" id="buttonID" type="button" value="submit" onclick="return toAlert()" />
+	</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.baidu.com">百度首页走起~</a>
+<a href="http://www.baidu.com" target="_blank">在新页面打开百度</a>
+</td>
+</tr>
+<tr><td>
+	上传文件: <input type="file">
+</td></tr>
+<tr><td><a href="day1.zip">点击下载</a></td></tr>
+</table>
+</form>
+</div>
+<div id = "input">和大的DIV并列<input name="check"  id="check" type="text"  value="" /></div>
+<div id = "input">没有id和name，是不是傻眼了<input class="stuname" type="text"  value="" /></div>
+<div  class= "fathdiv">
+<label>第一本书</label>
+<label>第二本书</label>
+<label>第三本书</label>
+<label>第四本书</label>
+</div>
+<br>
+<table border="1" width="100%">
+	<tr><td>张三</td><td>男</td><td>16</td><td><a href="#" onclick="alert('张三');">查看</a></td></tr>
+	<tr><td>李四</td><td>男</td><td>18</td><td><a href="#" onclick="alert('李四');">查看</a></td></tr>
+	<tr><td>王五</td><td>男</td><td>21</td><td><img src="loading.gif" style="width: 32px; height: 32px;" </td></tr>
+	<tr><td>赵六</td><td>男</td><td>15</td><td><a href="#" onclick="alert('赵六');">查看</a></td></tr>
+	<tr><td>宋七</td><td>男</td><td>17</td><td><a href="#" onclick="alert('宋七');">查看</a></td></tr>
+</table>
+<br>
+<input id = "alert" value = "alert" type = "button" onclick = "alert('请按确认继续！');"/>  
+ <input id = "confirm" value = "confirm" type = "button" onclick = "confirm('是否确定？');"/>  
+ <input id = "prompt" value = "prompt" type = "button" onclick = "var name = prompt('请输入地址:',''); document.write(name) "/>  
+
+<p></p>
+<iframe name="parent_frame" src="iframe.html" width="100%" height="400px"></iframe>
+
+
+<p></p>
+
+<form>
+	<input id='ro' type="text" readonly="readonly" value="哈哈你输入不了">
+	<input id='ds' type="button" value="不可点击" onclick="alert('点击成功')" disabled="disabled">
+	<input id='hd1' type="button" hidden value="hide1">
+	<input id='hd2' type="button" hidden="hidden" value="hide2">
+	<input id='hd3' type="button"  value="hide3" style="visibility: hidden">
+	<input id='hd4' type="button" hidden style="display: none" value="hide4">
+</form>
+<hr>
+<a href="www.qaschool.cn">友情链接</a>
+<script>
+	function change() {
+	    document.querySelector("body > table > tbody > tr:nth-child(3) > td:nth-child(4)").innerHTML="<a href='#' onclick='alert(\"王五\");'>查看</a>";
+    }
+	window.onload=function (){
+
+	setTimeout(change, Math.ceil(Math.random()*10000));
+
+	}
+</script>
+</body>
+
+</html>
