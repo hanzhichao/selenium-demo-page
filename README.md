@@ -6,3 +6,6 @@
 ## v2/selenium.html
 ![v1](imgs/v2.png)
 
+
+## 其他
+> [Selenium官方示例页面](https://seleniumbase.io/demo_page/)
